@@ -4,4 +4,6 @@
  * The program creates a conversation and collect data from the user and then prints a final encouraging message to the user.
  */
 int main (0)
-	char name[20]
+	char name[20];
+	char age[20];
+	char origin[20];
