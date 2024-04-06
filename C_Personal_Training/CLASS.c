@@ -19,8 +19,7 @@ int main()
 
     diff = total - male - female;
 
-    printf("The total number of students in your class is %d\nMale is %d\nFemale is %d\nAnd unknown students are %d\n", total, male, female, diff);
+    printf("The total number of students in your class is %d\nMale is %d\n Female is %d\n And unknown students are %d\n", total, male, female, diff);
 
     return 0;
 }
-

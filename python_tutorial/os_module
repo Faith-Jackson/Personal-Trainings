@@ -1,0 +1,20 @@
+#!/bin/env python
+
+import os
+
+file = input("Please input the name of the file you want to check, with its path:\n\n")
+
+if os.path.isfile(file):
+    print("The file is available\n")
+    print("Its location is:\n" + os.getcwd() + "\nList of other files in the dir are:\n") 
+    os.system("ls -la")
+
+else:
+    print("The file does not exist")
+    var = input("Do you want to create it?\n")
+    if var == "yes":
+        print("Creating it...")
+        os.system('touch {}'.format(file))
+    else:
+        print("That will be all, thanks")
+
